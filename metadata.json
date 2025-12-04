@@ -1,0 +1,5 @@
+{
+  "name": "Octagon IRF Motorsport Automation",
+  "description": "Intelligent invoice extraction and IRF template population for motorsport event management using Gemini AI.",
+  "requestFramePermissions": []
+}
