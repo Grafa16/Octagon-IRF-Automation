@@ -102,6 +102,18 @@ function App() {
       document.body.appendChild(link);
       link.click();
       link.parentNode?.removeChild(link);
+
+      // Reset to home page after short delay, preserving the template
+      setTimeout(() => {
+        setState(prev => ({
+          ...prev,
+          status: 'idle',
+          invoiceFile: null,
+          extractedData: null,
+          errorMessage: null
+        }));
+      }, 1500);
+
     } catch (e: any) {
       alert(`Error generating document: ${e.message}`);
     }
